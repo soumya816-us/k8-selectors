@@ -13,9 +13,9 @@ spec:
   tolerations:
   - key: "hardware"
     operator: "Equal"
-    value: "cpu"
+    value: "gpu"
     effect: "NoSchedule"
   - key: "hardware"
     operator: "Equal"
-    value: "cpu"
+    value: "gpu"
     effect: "NoExecute"
