@@ -19,13 +19,13 @@ spec:
   affinity:
     podAntiAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
-      - labelSelector:
-          matchExpressions:
-          - key: app-name
-            operator: In
-            values:
-            - pod-1
-        topologyKey: topology.kubernetes.io/zone
+        - labelSelector:
+            matchExpressions:
+              - key: app-name
+                operator: In
+                values:
+                  - pod-1
+          topologyKey: topology.kubernetes.io/zone
   containers:
   - name: with-pod-affinity
     image: registry.k8s.io/pause:3.8
