@@ -17,7 +17,7 @@ metadata:
     app-name: pod-2
 spec:
   affinity:
-    podAntiAffinity:
+    podAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
       - labelSelector:
           matchExpressions:
